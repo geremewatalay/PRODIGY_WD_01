@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+              integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+              crossorigin="anonymous" 
+            referrerpolicy="no-referrer" />
+        <title>Responsive Landing Page</title>
+    </head>
+    <body>
+        <header>
+            <!-- <i id="logo" class="fas fa-history"></i> -->
+            <i id="logo" class="fa fa-bicycle" aria-hidden="true"></i>
+
+            <!-- <h1>Back to Your Journey</h1>  -->
+            <nav class="nav">
+                <ul>
+                    <li><a id="home" href="">Home</a></li>
+                    <li><a id="history" href="">History</a></li>
+                    <li><a id="blog" href="">Blog</a></li>
+                    <li><a id="about" href="">About</a></li>
+                </ul>
+                <input type="checkbox" id="check"/>
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+            </nav>
+        </header>
+            <ul class="sidebar" id="sidebar">
+                <li><a id="home" href="">Home</a></li>
+                <li><a id="history" href="">History</a></li>
+                <li><a id="blog" href="">Blog</a></li>
+                <li><a id="about" href="">About</a></li>
+            </ul>
+        <main>
+            <div class="content">
+                <p id="qoute">“A generation which ignores history has no past and no future.”
+                    <span>Robert Heinlein</span></p>
+            </div>
+            <div class="img">
+                <div class="buttons" onclick="changeImage1()"><img src="https://images.pexels.com/photos/7438884/pexels-photo-7438884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+                <div class="buttons" onclick="changeImage2()"><img src="https://images.pexels.com/photos/17853346/pexels-photo-17853346/free-photo-of-fasil-ghebbi-castle-in-ethiopia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></div>
+                <div class="buttons" onclick="changeImage3()"><img src="https://trainsplanesandtuktuks.com/wp-content/uploads/2017/09/Ethiopia-2016-759.jpg"></div>
+            </div>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>
